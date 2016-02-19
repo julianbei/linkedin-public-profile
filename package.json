@@ -7,6 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "julianbei",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianbei/linkedin-public-profile"
+  },
+  "bugs": {
+    "url": "https://github.com/julianbei/linkedin-public-profile/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.3.1",
