@@ -7,7 +7,7 @@ var skillsAnalysis = function($, profile){
     var less  =  skill.hasClass('see-less');
 
     if(!more && !less){
-      profile.skills.push(skill.text());
+      profile.skills.push({name: skill.text()});
     }
   });
   return profile;
