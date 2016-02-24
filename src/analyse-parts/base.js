@@ -9,7 +9,12 @@ var baseAnalysis = function($, profile){
   profile.industry           = $("dl#demographics dd:nth-child(4)").text();
 
   // Picture
-  profile.picture            = $(".profile-picture img")[0].attributes['data-delayed-url']._nodeValue;
+  try {
+    profile.picture          = $(".profile-picture img")[0].attributes['data-delayed-url']._nodeValue;
+  } catch (err) {
+    profile.picture          = '';
+  }
+  
   return profile;
 }
 module.exports = baseAnalysis;
