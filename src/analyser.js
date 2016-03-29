@@ -2,7 +2,7 @@ var Profile = require('./profile');
 var linkedPeople = require('./analyse-parts/linkedPeople');
 
 var analyse = function (window, url) {
-  return new Promise(function(resolve, reject){
+  return new Promise(function (resolve, reject) {
     try {
       var $ = window.$;
       var profile = new Profile($)
@@ -15,9 +15,9 @@ var analyse = function (window, url) {
 
       links = linkedPeople($);
 
-      resolve({profile: profile, links: links})
+      resolve({ profile: profile, links: links });
     } catch (err) {
-      reject(err)
+      reject(err);
     }
   });
 };

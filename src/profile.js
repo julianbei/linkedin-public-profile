@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var baseAnalysis = require('./analyse-parts/base');
 var featuredAnalysis = require('./analyse-parts/featured');
@@ -11,29 +11,29 @@ class Profile {
     this.$ = $;
   }
 
-  base(){
+  base() {
     return baseAnalysis(this.$, this);
   }
 
-  featured(){
-    return featuredAnalysis(this.$, this)
+  featured() {
+    return featuredAnalysis(this.$, this);
   }
 
-  positions(){
-    return positionsAnalysis(this.$, this)
+  positions() {
+    return positionsAnalysis(this.$, this);
   }
 
-  skills(){
-    return skillsAnalysis(this.$, this)
+  skills() {
+    return skillsAnalysis(this.$, this);
   }
 
-  educations(){
-    return educationsAnalysis(this.$, this)
+  educations() {
+    return educationsAnalysis(this.$, this);
   }
 
-  clean(){
-    delete this.$
-    return this; 
+  clean() {
+    delete this.$;
+    return this;
   }
 
 };

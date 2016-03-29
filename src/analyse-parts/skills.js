@@ -1,15 +1,17 @@
-var skillsAnalysis = function($, profile){
+var skillsAnalysis = function ($, profile) {
   // Skills
   profile.skills = [];
-  $("#skills .pills li").each(function(){
-    var skill = $(this);
-    var more  =  skill.hasClass('see-more');
-    var less  =  skill.hasClass('see-less');
+  $('#skills .pills li').each(function () {
+    var $skill = $(this);
+    var more  =  $skill.hasClass('see-more');
+    var less  =  $skill.hasClass('see-less');
 
-    if(!more && !less){
-      profile.skills.push({name: skill.text()});
+    if (!more && !less) {
+      profile.skills.push({ name: $skill.text() });
     }
   });
+
   return profile;
-}
+};
+
 module.exports = skillsAnalysis;
