@@ -3,7 +3,7 @@
 function positionsAnalysis($, profile) {
   // Experiences
   profile.positions = [];
-  $('#experience .positions .position').each(() => {
+  $('#experience .positions .position').each(function extract() {
     const $positionItem = $(this);
     const position = {
       position: $positionItem.find('.item-title').text(),

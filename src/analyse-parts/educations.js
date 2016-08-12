@@ -3,7 +3,7 @@
 function educationsAnalysis($, profile) {
   // Education
   profile.educations = [];
-  $('#education .schools .school').each(() => {
+  $('#education .schools .school').each(function extract() {
     const $schoolItem = $(this);
     const school = {
       school: $schoolItem.find('.item-title').text(),

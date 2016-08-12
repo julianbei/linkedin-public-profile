@@ -54,179 +54,223 @@ request(url)									// request with html output
 
 The result looks like:
 ```json
-{
-  "url": "https://de.linkedin.com/in/julian-beisenk%C3%B6tter-77038939",
-  "name": "Julian Beisenkötter",
-  "headline": "Tech Developer bei HitFox Group",
-  "location": "Berlin und Umgebung, Deutschland",
-  "industry": "Computer-Software",
-  "featured_current": "HitFox Group",
-  "featured_past": "HitFox Group",
-  "featured_education": "DHBW Ravensburg",
-  "contacts": "185",
-  "positions": [
-    {
-      "position": "Tech Developer",
-      "companyName": "HitFox Group",
-      "dates": {
-        "from": "Oktober 2015",
-        "to": ""
+{  
+   "url":"https://de.linkedin.com/in/julianamelung",
+   "contacts":"240",
+   "name":"Julian Amelung geb. Beisenkötter",
+   "headline":"Software Artist",
+   "location":"Berlin und Umgebung, Deutschland",
+   "industry":"Computer-Software",
+   "picture":"https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe8AAAAJDYwZGEyYWUyLTVhNWMtNDNjYS1hNGIxLTA0NTVjOWNiNGEyYQ.jpg",
+   "featured_current":[  
+      "eXalted IT UG (haftungsbeschränkt)"
+   ],
+   "featured_past":[  
+      "FinLeap",
+      "HitFox Group",
+      "Accenture"
+   ],
+   "featured_education":[  
+      "Duale Hochschule Baden-Württemberg"
+   ],
+   "positions":[  
+      {  
+         "position":"CEO",
+         "companyName":"eXalted IT UG (haftungsbeschränkt)",
+         "from":"Februar 2011",
+         "to":"",
+         "locality":"Münster und Umgebung, Deutschland",
+         "description":"Business Development, Startup Consultant, Software EvangelistEntrepreneur, Geschäftsführer",
+         "current":true
       },
-      "locality": "",
-      "description": "Product Management, Business Model Innovation, Business Development, Project Management, Prototyping, Technical Feasibility Analysis, Big Data, Financial Services, AdTech, ",
-      "current": true
-    },
-    {
-      "position": "CEO",
-      "companyName": "eXalted IT UG (haftungsbeschränkt)",
-      "dates": {
-        "from": "Februar 2011",
-        "to": ""
+      {  
+         "position":"Senior Software Architect",
+         "companyName":"FinLeap",
+         "from":"April 2016",
+         "to":"Juli 2016",
+         "locality":"Berlin und Umgebung, Deutschland",
+         "description":"architect for distributed highly resilient polyglot cloud backends in a fast changing business environment.",
+         "current":false
       },
-      "locality": "Münster und Umgebung, Deutschland",
-      "description": "Business Development, Startup Consultant, Software EvangelistEntrepreneur, Geschäftsführer",
-      "current": true
-    },
-    {
-      "position": "Consultant",
-      "companyName": "Accenture",
-      "dates": {
-        "from": "Oktober 2012",
-        "to": "September 2015"
+      {  
+         "position":"Tech Developer",
+         "companyName":"HitFox Group",
+         "from":"Oktober 2015",
+         "to":"April 2016",
+         "locality":"",
+         "description":"Product Management, Business Model Innovation, Business Development, Project Management, Prototyping, Technical Feasibility Analysis, Big Data, Financial Services, AdTech,",
+         "current":false
       },
-      "locality": "",
-      "description": "Software Architect; Infrastructure Architect;",
-      "current": false
-    },
-    {
-      "position": "Studentische Hilfskraft",
-      "companyName": "Duale Hochschule Baden-Württemberg (DHBW)",
-      "dates": {
-        "from": "Oktober 2012",
-        "to": "Dezember 2012"
+      {  
+         "position":"Consultant",
+         "companyName":"Accenture",
+         "from":"Oktober 2012",
+         "to":"September 2015",
+         "locality":"",
+         "description":"Software Architecture; Infrastructure Architecture; Automotive; Cloud Migration; Capacity Management; Support Organisation; Incident Management; Innovation Engineer; ",
+         "current":false
       },
-      "locality": "",
-      "description": "Grundlagen der Programmierung",
-      "current": false
-    },
-    {
-      "position": "IT-Abteilung",
-      "companyName": "Max-Planck Institute for molecular Biomedicine",
-      "dates": {
-        "from": "Juli 2010",
-        "to": "Mai 2012"
+      {  
+         "position":"Studentische Hilfskraft",
+         "companyName":"Duale Hochschule Baden-Württemberg (DHBW) Ravensburg",
+         "from":"Oktober 2012",
+         "to":"Dezember 2012",
+         "locality":"",
+         "description":"Tutorium Grundlagen der Programmierung",
+         "current":false
       },
-      "locality": "",
-      "description": "Infrastructure Management",
-      "current": false
-    },
-    {
-      "position": "Oracle PL/SQL Consultant",
-      "companyName": "Biss Consulting",
-      "dates": {
-        "from": "Juli 2011",
-        "to": "November 2011"
+      {  
+         "position":"IT-Abteilung",
+         "companyName":"Max-Planck Institute for molecular Biomedicine",
+         "from":"Juli 2010",
+         "to":"Mai 2012",
+         "locality":"",
+         "description":"Infrastructure Management",
+         "current":false
       },
-      "locality": "",
-      "description": "Database Developer",
-      "current": false
-    }
-  ],
-  "skills": [
-    "Consulting",
-    "Entrepreneurship",
-    "Business Model Innovation",
-    "Design Thinking",
-    "Software Prototyping",
-    "Ruby",
-    "AngularJS",
-    "Ruby on Rails",
-    "Mobile Applications",
-    "Lean Startup",
-    "Web Development",
-    "Responsive Web Design",
-    "Rapid Prototyping",
-    "Linux",
-    "Python",
-    "Bash",
-    "Git",
-    "MySQL",
-    "PHP",
-    "CSS",
-    "HTML5",
-    "Automobilindustrie",
-    "Microservices",
-    "Projektmanagement",
-    "Datenbanken",
-    "SQL",
-    "Java",
-    "JavaScript",
-    "IT-Strategie",
-    "Softwareentwicklung",
-    "Start-ups",
-    "Agile Methoden",
-    "Business-Intelligence",
-    "Geschäftsprozesse",
-    "Veränderungsmanagement",
-    "Unternehmensführung",
-    "Unternehmensstrategie"
-  ],
-  "educations": [
-    {
-      "school": "DHBW Ravensburg",
-      "course": "Bachelor of Science (BSc), Economics and Computer science, Business Engineering, ECTS Grade A",
-      "dates": {
-        "from": "2012",
-        "to": "2015"
+      {  
+         "position":"Oracle PL/SQL Consultant",
+         "companyName":"biss consulting GmbH",
+         "from":"Juli 2011",
+         "to":"November 2011",
+         "locality":"",
+         "description":"PLSQL Developer and Database Designer",
+         "current":false
+      }
+   ],
+   "skills":[  
+      {  
+         "name":"Entrepreneurship"
       },
-      "description": "Business Engineering, Consulting, SAP, Java, Projektmanagement, Software-engineering, Requirements-engineering, IT-Management, ERP, CRM, SCMAktivitäten und Verbände: Tutor: Software Entwicklung"
-    },
-    {
-      "school": "Durban University of Technology",
-      "course": "Exchange, International Management, Project Management",
-      "dates": {
-        "from": "2014",
-        "to": "2014"
+      {  
+         "name":"Consulting"
       },
-      "description": "Project Management, IT-Management, Financial Accounting, International Management, Contract Management"
-    },
-    {
-      "school": "Fachhochschule Münster",
-      "course": "Bachelor of Applied Science (BASc), Wirtschaftsinformatik",
-      "dates": {
-        "from": "2011",
-        "to": "2012"
+      {  
+         "name":"Projektmanagement"
       },
-      "description": "Webentwicklung,Softwareentwicklung, IT-Management, Projektmanagement, IT-Infrastruktur"
-    },
-    {
-      "school": "Hans Böckler Berufskolleg Münster",
-      "course": "Abitur, Mathematik und Datenverarbeitungstechnik",
-      "dates": {
-        "from": "2008",
-        "to": "2011"
+      {  
+         "name":"Design Thinking"
       },
-      "description": "Aktivitäten und Verbände: Schülersprecher"
-    },
-    {
-      "school": "Hans Böckler Berufskolleg Münster",
-      "course": "Informationstechnischer Assistent, Elektrotechnik Informatik Wirtschaft",
-      "dates": {
-        "from": "2008",
-        "to": "2011"
+      {  
+         "name":"Start-ups"
       },
-      "description": "Netzwerktechnik, Technische Informatik, Datenbanken, Wirtschaft, Projektentmanagement, Grundlagen Softwareentwicklung, Philosophie"
-    },
-    {
-      "school": "Waldorfschule Münster",
-      "course": "FOR, Fachoberschulreife",
-      "dates": {
-        "from": "1997",
-        "to": "2008"
+      {  
+         "name":"Software Prototyping"
       },
-      "description": ""
-    }
-  ]
+      {  
+         "name":"Datenbanken"
+      },
+      {  
+         "name":"Web Development"
+      },
+      {  
+         "name":"Unternehmertum"
+      },
+      {  
+         "name":"Softwareentwicklung"
+      },
+      {  
+         "name":"Ruby"
+      },
+      {  
+         "name":"SQL"
+      },
+      {  
+         "name":"Ruby on Rails"
+      },
+      {  
+         "name":"MySQL"
+      },
+      {  
+         "name":"Microservices"
+      },
+      {  
+         "name":"Java"
+      },
+      {  
+         "name":"JavaScript"
+      },
+      {  
+         "name":"Big Data"
+      },
+      {  
+         "name":"Mobile Applications"
+      },
+      {  
+         "name":"Lean Startup"
+      },
+      {  
+         "name":"Project Management"
+      },
+      {  
+         "name":"Business Model Innovation"
+      },
+      {  
+         "name":"Unternehmensstrategie"
+      },
+      {  
+         "name":"Node.js"
+      },
+      {  
+         "name":"AngularJS"
+      },
+      {  
+         "name":"Software Development"
+      },
+      {  
+         "name":"BigData Architectures"
+      },
+      {  
+         "name":"Web-Entwicklung"
+      },
+      {  
+         "name":"Mobilanwendungen"
+      }
+   ],
+   "educations":[  
+      {  
+         "school":"Duale Hochschule Baden-Württemberg",
+         "course":"Bachelor of Science (BSc), Economics and Computer science, Business Engineering, ECTS Grade ABachelor of Science (BSc), Economics and Computer science, Business Engineering, ECTS Grade A",
+         "from":"2012",
+         "to":"2015",
+         "description":"Business Engineering, Consulting, SAP, Java, Projektmanagement, Software-engineering, Requirements-engineering, IT-Management, ERP, CRM, SCMAktivitäten und Verbände: Tutor: Software Entwicklung"
+      },
+      {  
+         "school":"Durban Institute of Technology",
+         "course":"Exchange, International Management, Project ManagementExchange, International Management, Project Management",
+         "from":"2014",
+         "to":"2014",
+         "description":"Project Management, IT-Management, Financial Accounting, International Management, Contract Management"
+      },
+      {  
+         "school":"Fachhochschule Münster",
+         "course":"Bachelor of Applied Science (BASc), WirtschaftsinformatikBachelor of Applied Science (BASc), Wirtschaftsinformatik",
+         "from":"2011",
+         "to":"2012",
+         "description":"Webentwicklung,Softwareentwicklung, IT-Management, Projektmanagement, IT-Infrastruktur"
+      },
+      {  
+         "school":"Hans Böckler Berufskolleg Münster",
+         "course":"Abitur, Mathematik und Datenverarbeitungstechnik, 1,5Abitur, Mathematik und Datenverarbeitungstechnik, 1,5",
+         "from":"2008",
+         "to":"2011",
+         "description":"Aktivitäten und Verbände: Schülersprecher"
+      },
+      {  
+         "school":"Hans Böckler Berufskolleg Münster",
+         "course":"Informationstechnischer Assistent, Elektrotechnik Informatik Wirtschaft, 1,0Informationstechnischer Assistent, Elektrotechnik Informatik Wirtschaft, 1,0",
+         "from":"2008",
+         "to":"2011",
+         "description":"Netzwerktechnik, Technische Informatik, Datenbanken, Wirtschaft, Projektentmanagement, Grundlagen Softwareentwicklung, Philosophie"
+      },
+      {  
+         "school":"Waldorfschule Münster",
+         "course":"FOR, Fachoberschulreife, 1,5FOR, Fachoberschulreife, 1,5",
+         "from":"1997",
+         "to":"2008",
+         "description":""
+      }
+   ]
 }
 ```
 
