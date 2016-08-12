@@ -1,9 +1,13 @@
-var jsdom = require('jsdom');
+'use strict';
 
-var retrieve = function (param) {
-  return new Promise(function (resolve, reject) {
+const jsdom = require('jsdom');
+const Promise = require('bluebird');
+
+function retrieve(param) {
+  return new Promise((resolve, reject) => {
     try {
-      var pattern = '^((https|http|ftp|rtsp|mms)?://)'
+      /* eslint no-useless-escape: 0*/
+      const pattern = '^((https|http|ftp|rtsp|mms)?://)'
         + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?"
         + '(([0-9]{1,3}\.){3}[0-9]{1,3}'
         + '|'
@@ -13,16 +17,12 @@ var retrieve = function (param) {
         + '(:[0-9]{1,4})?'
         + '((/?)|'
         + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
-      var regex = new RegExp(pattern);
+      const regex = new RegExp(pattern);
+      const isURL = regex.test(param);
 
-      var isURL = regex.test(param);
-
-      var callback = function (errors, window) {
-        if (errors) {
-          reject(errors);
-        }else {
-          resolve(window);
-        }
+      const callback = (errors, window) => {
+        if (errors) reject(errors);
+        resolve(window);
       };
 
       if (!isURL) {
@@ -30,17 +30,14 @@ var retrieve = function (param) {
             ['http://code.jquery.com/jquery.js'],
             callback
         );
-      }else {
+      } else {
         jsdom.env({ url: param,
             scripts: ['http://code.jquery.com/jquery.js'],
             done: callback,
         });
       }
-
-    } catch (err) {
-      reject(err);
-    }
+    } catch (err) { reject(err); }
   });
-};
+}
 
 module.exports = retrieve;

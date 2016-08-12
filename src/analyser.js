@@ -1,11 +1,13 @@
-var Profile = require('./profile');
-var linkedPeople = require('./analyse-parts/linkedPeople');
+'use strict';
 
-var analyse = function (window, url) {
-  return new Promise(function (resolve, reject) {
-    try {
-      var $ = window.$;
-      var profile = new Profile($)
+const Profile = require('./profile');
+const linkedPeople = require('./analyse-parts/linkedPeople');
+const Promise = require('bluebird');
+
+function analyse(window) {
+  try {
+    const $ = window.$;
+    const profile = new Profile($)
       .base()
       .featured()
       .positions()
@@ -13,13 +15,12 @@ var analyse = function (window, url) {
       .educations()
       .clean();
 
-      links = linkedPeople($);
+    const links = linkedPeople($);
 
-      resolve({ profile: profile, links: links });
-    } catch (err) {
-      reject(err);
-    }
-  });
-};
+    return Promise.resolve({ profile, links });
+  } catch (err) {
+    return Promise.reject(err);
+  }
+}
 
 module.exports = analyse;

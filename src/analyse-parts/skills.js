@@ -1,10 +1,12 @@
-var skillsAnalysis = function ($, profile) {
+'use strict';
+
+function skillsAnalysis($, profile) {
   // Skills
   profile.skills = [];
-  $('#skills .pills li').each(function () {
-    var $skill = $(this);
-    var more  =  $skill.hasClass('see-more');
-    var less  =  $skill.hasClass('see-less');
+  $('#skills .pills li').each(() => {
+    const $skill = $(this);
+    const more = $skill.hasClass('see-more');
+    const less = $skill.hasClass('see-less');
 
     if (!more && !less) {
       profile.skills.push({ name: $skill.text() });
@@ -12,6 +14,6 @@ var skillsAnalysis = function ($, profile) {
   });
 
   return profile;
-};
+}
 
 module.exports = skillsAnalysis;
