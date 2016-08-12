@@ -2,15 +2,15 @@
 
 const request = require('request-promise');
 const userAgents = require('./useragents');
+const linkedInUrl = require('./linkedInUrl');
+const metaheaders = require('./headers');
 const method = 'GET';
-const Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8';
 
-function retrieve(url) {
-  const headers = {
-    'Cache-Control': 'no-cache',
+function retrieve(link) {
+  const url = linkedInUrl.build(link);
+  const headers = Object.assign({}, metaheaders, {
     'User-Agent': userAgents.randomAgent(),
-    Accept,
-  };
+  });
   return request({ url, method, headers });
 }
 
