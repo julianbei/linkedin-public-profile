@@ -17,7 +17,6 @@ function baseAnalysis($, profile) {
   } catch (err) {
     profile.picture = '';
   }
-
   return profile;
 }
 
