@@ -13,40 +13,43 @@ npm install linkedin-public-profile
 ```
 and in file:
 ```javascript
-var LinkedInProfile = require('linkedin-public-profile');
+const linkedInProfile = require('linkedin-public-profile');
 ```
 
 ## Usage
 
 just call the module with a public linkedin profile url. It returns a promise which resolves to the profile.
 ```javascript
-var LinkedInProfile = require('./index');
+v'use strict';
+/* eslint no-console: 0*/
 
-var url = 'https://de.linkedin.com/in/julian-beisenk%C3%B6tter-77038939';
+const linkedInProfile = require('./index');
+
+const url = 'https://de.linkedin.com/in/julian-beisenk%C3%B6tter-77038939';
 
 // standard usage
-LinkedInProfile(url)
-.then(function(profile){			 // chain your logic
+linkedInProfile(url).then(profile => {  // chain your logic
   console.log(profile);
 });
 
 // With links to similar profiles
-LinkedInProfile(url, true)
-.then(function(result){
-  console.log(result.profile); // the requested profile
-	console.log(result.links);	 // the featured profiles on the page
+linkedInProfile(url, true)
+.then(result => {
+  console.log(result.profile);  // the requested profile
+  console.log(result.links);    // the featured profiles on the page
 });
 
 // usage with HTML
-var request = require('request-promise');
+const request = require('request-promise');
 
 request(url)									// request with html output
-.then(function(html){					// promise chain
-	return LinkedInProfile(html)// return the LinkedInProfile promise
-})
-.then(function(profile){			// chain your logic
-	console.log(profile);
+// return the LinkedInProfile promise
+.then(html => linkedInProfile(html))
+// promise chain
+.then(profile => { // chain your logic
+  console.log(profile);
 });
+
 ```
 
 The result looks like:
