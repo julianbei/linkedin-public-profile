@@ -20,12 +20,12 @@ const linkedInProfile = require('linkedin-public-profile');
 
 just call the module with a public linkedin profile url. It returns a promise which resolves to the profile.
 ```javascript
-v'use strict';
+'use strict';
 /* eslint no-console: 0*/
 
 const linkedInProfile = require('./index');
 
-const url = 'https://de.linkedin.com/in/julian-beisenk%C3%B6tter-77038939';
+const url = 'https://de.linkedin.com/in/julianamelung';
 
 // standard usage
 linkedInProfile(url).then(profile => {  // chain your logic
