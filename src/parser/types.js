@@ -1,5 +1,6 @@
 'use strict';
-const reader = require('./transform_markup');
+
+import { transform } from './transform_markup';
 
 function extract(d, base, target, $) {
   let selected = {};
@@ -53,7 +54,7 @@ const extractors = {
   Array(d) {
     let attributes = [];
     if (d.items.type === 'Object') {
-      attributes = reader.transform(d.items, extractors);
+      attributes = transform(d.items, extractors);
     }
     return (base, target, $) => {
       const array = [];
@@ -84,4 +85,4 @@ const extractors = {
   },
 };
 
-module.exports = extractors;
+export default extractors;

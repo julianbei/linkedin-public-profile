@@ -1,6 +1,7 @@
 {
   "name": "profile",
   "markup": {
+    "type": "Attribute",
     "url": {
       "base": true,
       "type": "Attribute",

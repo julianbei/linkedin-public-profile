@@ -17,8 +17,7 @@ const expect = chai.expect;
 
 describe('parser', () => {
   it('Should parse a profile', done => {
-    linkedInProfile(html).then(profile => {
-      console.log(profile);
+    linkedInProfile(html, true).then(profile => {
       expect(profile).to.eql(resultProfile);
       done();
     }).catch(done);

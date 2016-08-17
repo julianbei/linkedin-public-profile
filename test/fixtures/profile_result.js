@@ -1,15 +1,17 @@
-export default { url: 'https://de.linkedin.com/in/julianamelung',
-  contacts: '241',
-  name: 'Julian (Beisenkötter) Amelung',
-  headline: 'Software Artist',
-  location: 'Berlin Area, Germany',
-  industry: 'Computer Software',
-  picture: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe8AAAAJDYwZGEyYWUyLTVhNWMtNDNjYS1hNGIxLTA0NTVjOWNiNGEyYQ.jpg',
-  featured_current: ['eXalted IT'],
-  featured_past: ['FinLeap', 'HitFox Group', 'Accenture'],
-  featured_education: ['Duale Hochschule Baden-Württemberg'],
-  education:
-   [{ school: 'Duale Hochschule Baden-Württemberg',
+export default {
+  profile: {
+    url: 'https://de.linkedin.com/in/julianamelung',
+    contacts: '241',
+    name: 'Julian (Beisenkötter) Amelung',
+    headline: 'Software Artist',
+    location: 'Berlin Area, Germany',
+    industry: 'Computer Software',
+    picture: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe8AAAAJDYwZGEyYWUyLTVhNWMtNDNjYS1hNGIxLTA0NTVjOWNiNGEyYQ.jpg',
+    featured_current: ['eXalted IT'],
+    featured_past: ['FinLeap', 'HitFox Group', 'Accenture'],
+    featured_education: ['Duale Hochschule Baden-Württemberg'],
+    education: [
+     { school: 'Duale Hochschule Baden-Württemberg',
        course: 'Bachelor of Science (BSc), Economics and Computer science, ' +
        'Business Engineering, ECTS Grade ABachelor of Science (BSc), ' +
        'Economics and Computer science, Business Engineering, ECTS Grade A',
@@ -51,8 +53,8 @@ export default { url: 'https://de.linkedin.com/in/julianamelung',
        from: '1997',
        to: '2008',
        description: '' }],
-  experience:
-   [{ position: 'CEO',
+    experience: [
+     { position: 'CEO',
        companyName: 'eXalted IT',
        from: 'February 2011',
        to: 'now',
@@ -107,8 +109,8 @@ export default { url: 'https://de.linkedin.com/in/julianamelung',
        locality: '',
        description: 'PLSQL Developer and Database Designer',
        current: false }],
-  skills:
-   [{ name: 'Entrepreneurship' },
+    skills: [
+     { name: 'Entrepreneurship' },
      { name: 'Consulting' },
      { name: 'Projektmanagement' },
      { name: 'Design Thinking' },
@@ -136,4 +138,19 @@ export default { url: 'https://de.linkedin.com/in/julianamelung',
      { name: 'Software Development' },
      { name: 'BigData Architectures' },
      { name: 'Web-Entwicklung' },
-     { name: 'Mobilanwendungen' }] };
+     { name: 'Mobilanwendungen' },
+    ],
+  },
+  links: [
+   { link: 'https://www.linkedin.com/in/janbeckers?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/emiliodelazzari?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/aselimsalman?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/floriantopf?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/pbrueske?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/michael-r%C3%BCffer-61125324?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/daurer?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/dominic-breuker?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/belveryin?trk=pub-pbmap' },
+   { link: 'https://www.linkedin.com/in/dmitrykh?trk=pub-pbmap' },
+  ],
+};
