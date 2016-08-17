@@ -1,7 +1,7 @@
 'use strict';
 /* eslint no-console: 0*/
 
-const linkedInProfile = require('./dist/index');
+const linkedInProfile = require('./dist/index').default;
 
 const url = 'https://de.linkedin.com/in/julianamelung';
 

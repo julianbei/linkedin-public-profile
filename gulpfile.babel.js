@@ -7,7 +7,6 @@ import mocha from 'gulp-mocha';
 import istanbul from 'gulp-babel-istanbul';
 import nsp from 'gulp-nsp';
 import plumber from 'gulp-plumber';
-import concat from 'gulp-concat';
 import babel from 'gulp-babel';
 import eslint from 'gulp-eslint';
 import coveralls from 'gulp-coveralls';
@@ -39,11 +38,15 @@ gulp.task('pre-test', () => gulp.src(files.src)
     .pipe(istanbul.hookRequire())
 );
 
-gulp.task('transpile', () => gulp.src(files.src)
+gulp.task('transpile', ['copy_templates'], () => gulp.src(files.src)
     .pipe(babel())
-    .pipe(concat('index.js'))
     .pipe(gulp.dest('dist'))
 );
+
+gulp.task('copy_templates', () => gulp.src('./src/templates/*.json')
+  .pipe(gulp.dest('./dist/templates/'))
+);
+
 
 gulp.task('test', ['lint'], (cb) => {
   let mochaErr;
