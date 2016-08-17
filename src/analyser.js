@@ -1,19 +1,18 @@
 'use strict';
 
 import Promise from 'bluebird';
-import Profile from './profile';
 import linkedPeople from './analyse-parts/linkedPeople';
+import build from './template/parser';
+
+const m = require('./template/public_profile.json');
+
+const profileParser = build(m);
 
 export default function analyse(window) {
   try {
     const $ = window.$;
-    const profile = new Profile($)
-      .base()
-      .featured()
-      .positions()
-      .skills()
-      .educations()
-      .clean();
+
+    const profile = profileParser($);
 
     const links = linkedPeople($);
 
