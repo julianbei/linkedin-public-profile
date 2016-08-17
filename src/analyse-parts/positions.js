@@ -1,6 +1,6 @@
 'use strict';
 
-function positionsAnalysis($, profile) {
+export default function positionsAnalysis($, profile) {
   // Experiences
   profile.positions = [];
   $('#experience .positions .position').each(function extract() {
@@ -19,5 +19,3 @@ function positionsAnalysis($, profile) {
 
   return profile;
 }
-
-module.exports = positionsAnalysis;

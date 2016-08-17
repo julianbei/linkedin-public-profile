@@ -6,8 +6,6 @@ const agents = [
 ];
 
 
-function randomAgent() {
+export function randomAgent() {
   return agents[Math.floor(Math.random() * agents.length)];
 }
-
-module.exports = { randomAgent };

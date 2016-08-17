@@ -1,6 +1,6 @@
 'use strict';
 
-function skillsAnalysis($, profile) {
+export default function skillsAnalysis($, profile) {
   // Skills
   profile.skills = [];
   $('#skills .pills li').each(function extract() {
@@ -15,5 +15,3 @@ function skillsAnalysis($, profile) {
 
   return profile;
 }
-
-module.exports = skillsAnalysis;

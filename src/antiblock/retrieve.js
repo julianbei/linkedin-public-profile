@@ -1,18 +1,16 @@
 'use strict';
 
-const request = require('request-promise');
-const userAgents = require('./useragents');
-const linkedInUrl = require('./linkedInUrl');
-const metaheaders = require('./headers');
+import request from 'request-promise';
+import userAgents from './useragents';
+import linkedInUrl from './linkedInUrl';
+import metaheaders from './headers';
 const method = 'GET';
 const gzip = true;
 
-function retrieve(link) {
+export default function retrieve(link) {
   const url = linkedInUrl.build(link);
   const headers = Object.assign({}, metaheaders, {
     'User-Agent': userAgents.randomAgent(),
   });
   return request({ url, method, headers, gzip });
 }
-
-module.exports = retrieve;

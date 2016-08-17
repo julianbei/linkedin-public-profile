@@ -1,10 +1,10 @@
 'use strict';
 
-const baseAnalysis = require('./analyse-parts/base');
-const featuredAnalysis = require('./analyse-parts/featured');
-const positionsAnalysis = require('./analyse-parts/positions');
-const skillsAnalysis = require('./analyse-parts/skills');
-const educationsAnalysis = require('./analyse-parts/educations');
+import baseAnalysis from './analyse-parts/base';
+import featuredAnalysis from './analyse-parts/featured';
+import positionsAnalysis from './analyse-parts/positions';
+import skillsAnalysis from './analyse-parts/skills';
+import educationsAnalysis from './analyse-parts/educations';
 
 class Profile {
   constructor($) {
@@ -38,4 +38,4 @@ class Profile {
 
 }
 
-module.exports = Profile;
+export default Profile;

@@ -1,6 +1,6 @@
 'use strict';
 
-function baseAnalysis($, profile) {
+export default function baseAnalysis($, profile) {
   profile.url = $("link[rel='canonical']").attr('href');
   profile.contacts = $('.member-connections strong').text();
 
@@ -19,5 +19,3 @@ function baseAnalysis($, profile) {
   }
   return profile;
 }
-
-module.exports = baseAnalysis;

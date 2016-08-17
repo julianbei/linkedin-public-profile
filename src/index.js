@@ -1,11 +1,11 @@
 'use strict';
 
 // Scrape a linkedin profile for the public contents
-const Promise = require('bluebird');
-const analyser = require('./analyser');
-const load = require('./load');
+import Promise from 'bluebird';
+import analyser from './analyser';
+import load from './load';
 
-function getProfile(param, withlinks) {
+export default function getProfile(param, withlinks) {
   return load(param)             // retrieve Profile
       .then(window => analyser(window)) // Analyse Page
       .then(result => {
@@ -13,5 +13,3 @@ function getProfile(param, withlinks) {
         return Promise.resolve(result.profile);         // resolve to profile
       });
 }
-
-module.exports = getProfile;

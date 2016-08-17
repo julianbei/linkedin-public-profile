@@ -2,7 +2,7 @@
 
 const baseUrl = 'https://www.linkedin.com/in/';
 
-function build(link) {
+export function build(link) {
   const position = link.indexOf('/in/') + 4;
   const params = link.indexOf('?');
   let member = '';
@@ -13,5 +13,3 @@ function build(link) {
   }
   return `${baseUrl}${member}`;
 }
-
-module.exports = { build };

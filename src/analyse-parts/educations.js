@@ -1,6 +1,6 @@
 'use strict';
 
-function educationsAnalysis($, profile) {
+export default function educationsAnalysis($, profile) {
   // Education
   profile.educations = [];
   $('#education .schools .school').each(function extract() {
@@ -17,5 +17,3 @@ function educationsAnalysis($, profile) {
 
   return profile;
 }
-
-module.exports = educationsAnalysis;

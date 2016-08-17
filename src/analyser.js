@@ -1,10 +1,10 @@
 'use strict';
 
-const Profile = require('./profile');
-const linkedPeople = require('./analyse-parts/linkedPeople');
-const Promise = require('bluebird');
+import Profile from './profile';
+import linkedPeople from './analyse-parts/linkedPeople';
+import Promise from 'bluebird';
 
-function analyse(window) {
+export default function analyse(window) {
   try {
     const $ = window.$;
     const profile = new Profile($)
@@ -22,5 +22,3 @@ function analyse(window) {
     return Promise.reject(err);
   }
 }
-
-module.exports = analyse;

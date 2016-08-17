@@ -1,7 +1,6 @@
 'use strict';
 
-
-function featuredAnalysis($, profile) {
+export default function featuredAnalysis($, profile) {
   // util
   function extraInfo(subject) {
     const result = [];
@@ -18,5 +17,3 @@ function featuredAnalysis($, profile) {
 
   return profile;
 }
-
-module.exports = featuredAnalysis;
