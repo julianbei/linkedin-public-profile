@@ -10,16 +10,12 @@ import linkedInProfile from '../src/index';
 // fixtures
 import resultProfile from './fixtures/profile_result';
 
-let html = '';
+const html = fs.readFileSync('./test/fixtures/profile.html', 'utf8');
 const url = 'https://de.linkedin.com/in/julianamelung';
 
 const expect = chai.expect;
 
 describe('parser', () => {
-  before(() => {
-    html = fs.readFileSync('./test/fixtures/profile.html', 'utf8');
-  });
-
   it('Should parse a profile', done => {
     linkedInProfile(html).then(profile => {
       expect(profile).to.eql(resultProfile);

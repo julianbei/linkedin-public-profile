@@ -13,7 +13,7 @@ export default function baseAnalysis($, profile) {
   // Picture
   /* eslint no-underscore-dangle: ["error", { "allow": ["_nodeValue"] }]*/
   try {
-    profile.picture = $('.profile-picture img')[0].attributes['data-delayed-url']._nodeValue;
+    profile.picture = $('.profile-picture img').attr('data-delayed-url');
   } catch (err) {
     profile.picture = '';
   }
