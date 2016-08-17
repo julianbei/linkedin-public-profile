@@ -1,5 +1,4 @@
-export default {
-  url: 'https://de.linkedin.com/in/julianamelung',
+export default { url: 'https://de.linkedin.com/in/julianamelung',
   contacts: '241',
   name: 'Julian (Beisenkötter) Amelung',
   headline: 'Software Artist',
@@ -9,11 +8,54 @@ export default {
   featured_current: ['eXalted IT'],
   featured_past: ['FinLeap', 'HitFox Group', 'Accenture'],
   featured_education: ['Duale Hochschule Baden-Württemberg'],
-  positions:
+  education:
+   [{ school: 'Duale Hochschule Baden-Württemberg',
+       course: 'Bachelor of Science (BSc), Economics and Computer science, ' +
+       'Business Engineering, ECTS Grade ABachelor of Science (BSc), ' +
+       'Economics and Computer science, Business Engineering, ECTS Grade A',
+       from: '2012',
+       to: '2015',
+       description: 'Business Engineering, Consulting, SAP, Java, Projektmanagement,' +
+       ' Software-engineering, Requirements-engineering, IT-Management, ERP, ' +
+       'CRM, SCMActivities and Societies: Tutor: Software Entwicklung' },
+     { school: 'Durban Institute of Technology',
+       course: 'Exchange, International Management, Project ManagementExchange, ' +
+       'International Management, Project Management',
+       from: '2014',
+       to: '2014',
+       description: 'Project Management, IT-Management, Financial Accounting, ' +
+       'International Management, Contract Management' },
+     { school: 'Fachhochschule Münster',
+       course: 'Bachelor of Applied Science (BASc), WirtschaftsinformatikBachelor ' +
+       'of Applied Science (BASc), Wirtschaftsinformatik',
+       from: '2011',
+       to: '2012',
+       description: 'Webentwicklung,Softwareentwicklung, IT-Management, ' +
+       'Projektmanagement, IT-Infrastruktur' },
+     { school: 'Hans Böckler Berufskolleg Münster',
+       course: 'Abitur, Mathematik und Datenverarbeitungstechnik, 1,5Abitur, ' +
+       'Mathematik und Datenverarbeitungstechnik, 1,5',
+       from: '2008',
+       to: '2011',
+       description: 'Activities and Societies: Schülersprecher' },
+     { school: 'Hans Böckler Berufskolleg Münster',
+       course: 'Informationstechnischer Assistent, Elektrotechnik Informatik ' +
+       'Wirtschaft, 1,0Informationstechnischer Assistent, Elektrotechnik ' +
+       'Informatik Wirtschaft, 1,0',
+       from: '2008',
+       to: '2011',
+       description: 'Netzwerktechnik, Technische Informatik, Datenbanken, ' +
+       'Wirtschaft, Projektentmanagement, Grundlagen Softwareentwicklung, Philosophie' },
+     { school: 'Waldorfschule Münster',
+       course: 'FOR, Fachoberschulreife, 1,5FOR, Fachoberschulreife, 1,5',
+       from: '1997',
+       to: '2008',
+       description: '' }],
+  experience:
    [{ position: 'CEO',
        companyName: 'eXalted IT',
        from: 'February 2011',
-       to: '',
+       to: 'now',
        locality: 'Münster Area, Germany',
        description: 'Business Development, Startup Consultant, ' +
        'Software EvangelistEntrepreneur, Geschäftsführer',
@@ -23,26 +65,26 @@ export default {
        from: 'April 2016',
        to: 'July 2016',
        locality: 'Berlin Area, Germany',
-       description: 'architect for distributed highly resilient polyglot ' +
-       'cloud backends in a fast changing business environment.',
+       description: 'architect for distributed highly resilient polyglot cloud ' +
+       'backends in a fast changing business environment.',
        current: false },
      { position: 'Tech Developer',
        companyName: 'HitFox Group',
        from: 'October 2015',
        to: 'April 2016',
        locality: '',
-       description: 'Product Management, Business Model Innovation, Business Development, ' +
-       'Project Management, Prototyping, Technical Feasibility Analysis,' +
-       ' Big Data, Financial Services, AdTech,',
+       description: 'Product Management, Business Model Innovation, Business ' +
+       'Development, Project Management, Prototyping, Technical Feasibility ' +
+       'Analysis, Big Data, Financial Services, AdTech,',
        current: false },
      { position: 'Consultant',
        companyName: 'Accenture',
        from: 'October 2012',
        to: 'September 2015',
        locality: '',
-       description: 'Software Architecture; Infrastructure Architecture; Automotive; ' +
-       'Cloud Migration; Capacity Management; Support Organisation;' +
-       ' Incident Management; Innovation Engineer; ',
+       description: 'Software Architecture; Infrastructure Architecture; ' +
+       'Automotive; Cloud Migration; Capacity Management; Support Organisation; ' +
+       'Incident Management; Innovation Engineer; ',
        current: false },
      { position: 'Studentische Hilfskraft',
        companyName: 'Duale Hochschule Baden-Württemberg (DHBW) Ravensburg',
@@ -94,46 +136,4 @@ export default {
      { name: 'Software Development' },
      { name: 'BigData Architectures' },
      { name: 'Web-Entwicklung' },
-     { name: 'Mobilanwendungen' }],
-  educations:
-   [{ school: 'Duale Hochschule Baden-Württemberg',
-       course: 'Bachelor of Science (BSc), Economics and Computer science, ' +
-       'Business Engineering, ECTS Grade ABachelor of Science (BSc), Economics' +
-       ' and Computer science, Business Engineering, ECTS Grade A',
-       from: '2012',
-       to: '2015',
-       description: 'Business Engineering, Consulting, SAP, Java, Projektmanagement,' +
-       ' Software-engineering, Requirements-engineering, IT-Management, ERP, CRM,' +
-       ' SCMActivities and Societies: Tutor: Software Entwicklung' },
-     { school: 'Durban Institute of Technology',
-       course: 'Exchange, International Management, Project ManagementExchange, ' +
-       'International Management, Project Management',
-       from: '2014',
-       to: '2014',
-       description: 'Project Management, IT-Management, Financial Accounting, ' +
-       'International Management, Contract Management' },
-     { school: 'Fachhochschule Münster',
-       course: 'Bachelor of Applied Science (BASc), WirtschaftsinformatikBachelor' +
-       ' of Applied Science (BASc), Wirtschaftsinformatik',
-       from: '2011',
-       to: '2012',
-       description: 'Webentwicklung,Softwareentwicklung, IT-Management,' +
-       ' Projektmanagement, IT-Infrastruktur' },
-     { school: 'Hans Böckler Berufskolleg Münster',
-       course: 'Abitur, Mathematik und Datenverarbeitungstechnik, 1,5Abitur, ' +
-       'Mathematik und Datenverarbeitungstechnik, 1,5',
-       from: '2008',
-       to: '2011',
-       description: 'Activities and Societies: Schülersprecher' },
-     { school: 'Hans Böckler Berufskolleg Münster',
-       course: 'Informationstechnischer Assistent, Elektrotechnik Informatik Wirtschaft,' +
-       ' 1,0Informationstechnischer Assistent, Elektrotechnik Informatik Wirtschaft, 1,0',
-       from: '2008',
-       to: '2011',
-       description: 'Netzwerktechnik, Technische Informatik, Datenbanken, Wirtschaft,' +
-       ' Projektentmanagement, Grundlagen Softwareentwicklung, Philosophie' },
-     { school: 'Waldorfschule Münster',
-       course: 'FOR, Fachoberschulreife, 1,5FOR, Fachoberschulreife, 1,5',
-       from: '1997',
-       to: '2008',
-       description: '' }] };
+     { name: 'Mobilanwendungen' }] };

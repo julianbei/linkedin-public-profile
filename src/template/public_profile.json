@@ -80,7 +80,8 @@
         "description": {
           "type": "Attribute",
           "selector": ".description p",
-          "value": "text"
+          "value": "text",
+          "fallback": ""
         }
       }
     },
@@ -107,17 +108,20 @@
         "to": {
           "type": "Attribute",
           "selector": ".meta .date-range time:nth-child(2)",
-          "value": "text"
+          "value": "text",
+          "fallback": "now"
         },
         "locality": {
           "type": "Attribute",
           "selector": ".meta .location",
-          "value": "text"
+          "value": "text",
+          "fallback": ""
         },
         "description": {
           "type": "Attribute",
           "selector": ".description",
-          "value": "text"
+          "value": "text",
+          "fallback": ""
         },
         "current": {
           "type": "Bool",
@@ -135,7 +139,7 @@
       "selector": "#skills .pills li",
       "items": {
         "type": "Attribute",
-        "name": "skill",
+        "name": "name",
         "parent": true,
         "value": "text",
         "notClass": ["see-more", "see-less"]
