@@ -13,6 +13,6 @@ const urlpattern = '^((https|http|ftp|rtsp|mms)?://)'
   + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
 const urlRegex = new RegExp(urlpattern);
 
-export function isURL(param) {
+export default function isURL(param) {
   return urlRegex.test(param);
 }

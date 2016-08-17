@@ -2,7 +2,7 @@
 import jsdom from 'jsdom';
 import Promise from 'bluebird';
 
-export function load(html) {
+function load(html) {
   return new Promise((resolve, reject) => {
     function callback(errors, window) {
       if (errors) reject(errors);
@@ -14,3 +14,5 @@ export function load(html) {
     } catch (err) { reject(err); }
   });
 }
+
+export default { load };

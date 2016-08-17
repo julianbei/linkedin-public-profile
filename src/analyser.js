@@ -1,8 +1,8 @@
 'use strict';
 
+import Promise from 'bluebird';
 import Profile from './profile';
 import linkedPeople from './analyse-parts/linkedPeople';
-import Promise from 'bluebird';
 
 export default function analyse(window) {
   try {

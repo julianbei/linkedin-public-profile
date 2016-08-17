@@ -23,7 +23,7 @@ just call the module with a public linkedin profile url. It returns a promise wh
 'use strict';
 /* eslint no-console: 0*/
 
-const linkedInProfile = require('./index');
+const linkedInProfile = require('linkedin-public-profile');
 
 const url = 'https://de.linkedin.com/in/julianamelung';
 
