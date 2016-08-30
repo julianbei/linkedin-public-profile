@@ -18,7 +18,7 @@
   "dependencies": {
     "bluebird": "^3.3.1",
     "jquery": "^3.1.0",
-    "jsdom": "9.4.2",
+    "jsdom": "9.4.3",
     "request-promise": "^4.1.1"
   },
   "devDependencies": {
