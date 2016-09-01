@@ -1,6 +1,6 @@
 {
   "name": "linkedin-public-profile",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "description": "A scraper for LinkedIn public profiles",
   "main": "./dist/index.js",
   "scripts": {
