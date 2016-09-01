@@ -1,13 +1,16 @@
 'use strict';
 
-const input = require('./util/input');
-const window = require('./util/window');
-const retrieve = require('./antiblock/retrieve');
+import isURL from './util/inputs';
+import window from './util/window';
+import retrieve from './antiblock/retrieve';
 
-function initialize(param) {
-  if (!input.isURL(param)) return window.load(param);
+export default function initialize(param) {
+  if (!isURL(param)) return window.load(param);
   return retrieve(param)
-    .then(html => window.load(html));
+    .then(html => window.load(html))
+    .catch((err) => {
+      console.error('access denied, you have probably been blocked by the ' +
+        `linkedin firewall..\n :-( \n statusCode: ${err.statusCode}`);
+      throw err;
+    });
 }
-
-module.exports = initialize;

@@ -2,30 +2,57 @@
   "name": "linkedin-public-profile",
   "version": "3.4.0",
   "description": "A scraper for LinkedIn public profiles",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "test-watch": "gulp watch",
+    "coveralls": "gulp coveralls",
+    "build": "gulp build"
   },
-  "author": "julianbei",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "jquery": "^2.1.3",
+    "jsdom": "5.6.1",
+    "request-promise": "^2.0.1",
+    "user-agent-string-generator": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "chai": "^3.5.0",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-istanbul": "^1.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^3.0.1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^1.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nsp": "^2.4.2",
+    "gulp-plumber": "^1.1.0",
+    "mocha": "3.0.2"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julianbei/linkedin-public-profile"
+    "url": "git://github.com/julianbei/linkedin-public-profile.git"
   },
+  "keywords": [
+    "linkedin",
+    "profile",
+    "scraper",
+    "node.js"
+  ],
+  "author": "julianbei",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/julianbei/linkedin-public-profile/issues"
   },
-  "license": "MIT",
-  "dependencies": {
-    "bluebird": "^3.3.1",
-    "jquery": "^3.1.0",
-    "jsdom": "9.4.2",
-    "request-promise": "^4.1.1"
-  },
-  "devDependencies": {
-    "eslint": "^3.1.0",
-    "eslint-config-airbnb": "^10.0.1",
-    "eslint-plugin-import": "^1.10.3",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^6.1.0"
-  }
+  "homepage": "https://github.com/julianbei/linkedin-public-profile"
 }

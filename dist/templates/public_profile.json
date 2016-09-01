@@ -1,0 +1,150 @@
+{
+  "name": "profile",
+  "markup": {
+    "type": "Attribute",
+    "url": {
+      "base": true,
+      "type": "Attribute",
+      "selector": "link[rel='canonical']",
+      "value": "attr",
+      "attr": "href"
+    },
+    "contacts": {
+      "type": "Attribute",
+      "selector": ".member-connections strong",
+      "value": "text"
+    },
+    "name": {
+      "type": "Attribute",
+      "selector": "h1#name",
+      "value": "text"
+    },
+    "headline": {
+      "type": "Attribute",
+      "selector": "p.headline.title",
+      "value": "text"
+    },
+    "location": {
+      "type": "Attribute",
+      "selector": "dl#demographics .descriptor.adr span.locality",
+      "value": "text"
+    },
+    "industry": {
+      "type": "Attribute",
+      "selector": "dl#demographics dd:nth-child(4)",
+      "value": "text"
+    },
+    "picture": {
+      "type": "Attribute",
+      "selector": ".profile-picture img",
+      "value": "attr",
+      "attr": "data-delayed-url",
+      "fallback": "fallback.jpg"
+    },
+    "featured_current": {
+      "type": "Children",
+      "selector": ".extra-info [data-section='currentPositionsDetails'] td ol li"
+    },
+    "featured_past": {
+      "type": "Children",
+      "selector": ".extra-info [data-section='pastPositionsDetails'] td ol li"
+    },
+    "featured_education": {
+      "type": "Children",
+      "selector": ".extra-info [data-section='educationsDetails'] td ol li"
+    },
+    "education": {
+      "type": "Array",
+      "selector": "#education .schools .school",
+      "items": {
+        "type": "Object",
+        "school": {
+          "type": "Attribute",
+          "selector": ".item-title",
+          "value": "text"
+        },
+        "course": {
+          "type": "Attribute",
+          "selector": ".item-subtitle",
+          "value": "text"
+        },
+        "from": {
+          "type": "Attribute",
+          "selector": ".meta .date-range time:nth-child(1)",
+          "value": "text"
+        },
+        "to": {
+          "type": "Attribute",
+          "selector": ".meta .date-range time:nth-child(2)",
+          "value": "text"
+        },
+        "description": {
+          "type": "Attribute",
+          "selector": ".description p",
+          "value": "text",
+          "fallback": ""
+        }
+      }
+    },
+    "experience": {
+      "type": "Array",
+      "selector": "#experience .positions .position",
+      "items": {
+        "type": "Object",
+        "position": {
+          "type": "Attribute",
+          "selector": ".item-title",
+          "value": "text"
+        },
+        "companyName": {
+          "type": "Attribute",
+          "selector": ".item-subtitle",
+          "value": "text"
+        },
+        "from": {
+          "type": "Attribute",
+          "selector": ".meta .date-range time:nth-child(1)",
+          "value": "text"
+        },
+        "to": {
+          "type": "Attribute",
+          "selector": ".meta .date-range time:nth-child(2)",
+          "value": "text",
+          "fallback": "now"
+        },
+        "locality": {
+          "type": "Attribute",
+          "selector": ".meta .location",
+          "value": "text",
+          "fallback": ""
+        },
+        "description": {
+          "type": "Attribute",
+          "selector": ".description",
+          "value": "text",
+          "fallback": ""
+        },
+        "current": {
+          "type": "Bool",
+          "Attribute": {
+            "parent": true,
+            "value": "attr",
+            "attr": "data-section"
+          },
+          "comparison": "currentPositionsDetails"
+        }
+      }
+    },
+    "skills": {
+      "type": "Array",
+      "selector": "#skills .pills li",
+      "items": {
+        "type": "Attribute",
+        "name": "name",
+        "parent": true,
+        "value": "text",
+        "notClass": ["see-more", "see-less"]
+      }
+    }
+  }
+}

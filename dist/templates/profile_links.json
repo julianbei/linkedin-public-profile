@@ -1,0 +1,16 @@
+{
+  "name": "links",
+  "markup": {
+    "links": {
+      "type": "Array",
+      "selector": ".browse-map .profile-card .info a",
+      "items": {
+        "type": "Attribute",
+        "name": "link",
+        "parent": true,
+        "value": "attr",
+        "attr": "href"
+      }
+    }
+  }
+}

@@ -1,26 +1,23 @@
 'use strict';
 
-const Profile = require('./profile');
-const linkedPeople = require('./analyse-parts/linkedPeople');
-const Promise = require('bluebird');
+import Promise from 'bluebird';
+import build from './parser/index';
 
-function analyse(window) {
-  try {
-    const $ = window.$;
-    const profile = new Profile($)
-      .base()
-      .featured()
-      .positions()
-      .skills()
-      .educations()
-      .clean();
+import profileRules from './templates/public_profile.json';
+import linksRules from './templates/profile_links.json';
 
-    const links = linkedPeople($);
+const profileParser = build(profileRules);
+const linkParser = build(linksRules);
 
-    return Promise.resolve({ profile, links });
-  } catch (err) {
-    return Promise.reject(err);
-  }
+export default function analyse(window) {
+  return new Promise((resolve, reject) => {
+    try {
+      const $ = window.$;
+      const profile = profileParser($);
+      const links = linkParser($).links;
+      resolve({ profile, links });
+    } catch (err) {
+      reject(err);
+    }
+  });
 }
-
-module.exports = analyse;

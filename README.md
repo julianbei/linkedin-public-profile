@@ -6,6 +6,11 @@
 # linkedin-public-profile
 Tiny LinkedIn profile scraper for public profiles.
 
+Scraping LinkedIn Profiles does violate their policies and they may sue you.
+Therefore this might be my last version of this tool.
+please see: https://www.linkedin.com/help/linkedin/answer/56347
+
+
 ## Installation
 in console:
 ```
@@ -23,7 +28,7 @@ just call the module with a public linkedin profile url. It returns a promise wh
 'use strict';
 /* eslint no-console: 0*/
 
-const linkedInProfile = require('./index');
+const linkedInProfile = require('linkedin-public-profile');
 
 const url = 'https://de.linkedin.com/in/julianamelung';
 
@@ -277,7 +282,7 @@ The result looks like:
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Julian Beisenkötter
+Copyright (c) 2015 Julian Amelung
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

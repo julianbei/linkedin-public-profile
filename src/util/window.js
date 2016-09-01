@@ -1,6 +1,6 @@
 'use strict';
-const jsdom = require('jsdom');
-const Promise = require('bluebird');
+import jsdom from 'jsdom';
+import Promise from 'bluebird';
 
 function load(html) {
   return new Promise((resolve, reject) => {
@@ -15,4 +15,4 @@ function load(html) {
   });
 }
 
-module.exports = { load };
+export default { load };
