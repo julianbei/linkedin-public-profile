@@ -145,6 +145,17 @@
         "value": "text",
         "notClass": ["see-more", "see-less"]
       }
+    },
+    "links":{
+      "type": "Array",
+      "selector": ".browse-map .profile-card .info a",
+      "items": {
+        "type": "Attribute",
+        "name": "link",
+        "parent": true,
+        "value": "attr",
+        "attr": "href"
+      }
     }
   }
 }

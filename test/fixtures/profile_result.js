@@ -1,16 +1,15 @@
 export default {
-  profile: {
-    url: 'https://de.linkedin.com/in/julianamelung',
-    contacts: '241',
-    name: 'Julian (Beisenkötter) Amelung',
-    headline: 'Software Artist',
-    location: 'Berlin Area, Germany',
-    industry: 'Computer Software',
-    picture: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe8AAAAJDYwZGEyYWUyLTVhNWMtNDNjYS1hNGIxLTA0NTVjOWNiNGEyYQ.jpg',
-    featured_current: ['eXalted IT'],
-    featured_past: ['FinLeap', 'HitFox Group', 'Accenture'],
-    featured_education: ['Duale Hochschule Baden-Württemberg'],
-    education: [
+  url: 'https://de.linkedin.com/in/julianamelung',
+  contacts: '241',
+  name: 'Julian (Beisenkötter) Amelung',
+  headline: 'Software Artist',
+  location: 'Berlin Area, Germany',
+  industry: 'Computer Software',
+  picture: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe8AAAAJDYwZGEyYWUyLTVhNWMtNDNjYS1hNGIxLTA0NTVjOWNiNGEyYQ.jpg',
+  featured_current: ['eXalted IT'],
+  featured_past: ['FinLeap', 'HitFox Group', 'Accenture'],
+  featured_education: ['Duale Hochschule Baden-Württemberg'],
+  education: [
      { school: 'Duale Hochschule Baden-Württemberg',
        course: 'Bachelor of Science (BSc), Economics and Computer science, ' +
        'Business Engineering, ECTS Grade ABachelor of Science (BSc), ' +
@@ -53,7 +52,7 @@ export default {
        from: '1997',
        to: '2008',
        description: '' }],
-    experience: [
+  experience: [
      { position: 'CEO',
        companyName: 'eXalted IT',
        from: 'February 2011',
@@ -109,7 +108,7 @@ export default {
        locality: '',
        description: 'PLSQL Developer and Database Designer',
        current: false }],
-    skills: [
+  skills: [
      { name: 'Entrepreneurship' },
      { name: 'Consulting' },
      { name: 'Projektmanagement' },
@@ -139,8 +138,7 @@ export default {
      { name: 'BigData Architectures' },
      { name: 'Web-Entwicklung' },
      { name: 'Mobilanwendungen' },
-    ],
-  },
+  ],
   links: [
    { link: 'https://www.linkedin.com/in/janbeckers?trk=pub-pbmap' },
    { link: 'https://www.linkedin.com/in/emiliodelazzari?trk=pub-pbmap' },
