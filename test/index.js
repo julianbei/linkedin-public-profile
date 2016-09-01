@@ -11,7 +11,7 @@ import linkedInProfile from '../src/index';
 import resultProfile from './fixtures/profile_result';
 
 const html = fs.readFileSync('./test/fixtures/profile.html', 'utf8');
-const url = 'https://de.linkedin.com/in/julianamelung';
+// const url = 'https://de.linkedin.com/in/julianamelung';
 
 const expect = chai.expect;
 
@@ -38,10 +38,10 @@ describe('parser', () => {
     }).catch(done);
   });
 
-  it('Should download and parse a profile', done => {
-    linkedInProfile(url).then(profile => {
-      expect(profile).to.eql(resultProfile);
-      done();
-    }).catch(done);
-  });
+  // it('Should download and parse a profile', done => {
+  //   linkedInProfile(url).then(profile => {
+  //     expect(profile).to.eql(resultProfile);
+  //     done();
+  //   }).catch(done);
+  // });
 });

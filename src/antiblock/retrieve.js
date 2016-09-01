@@ -1,7 +1,7 @@
 'use strict';
 
 import request from 'request-promise';
-import userAgents from './useragents';
+import userAgentGenerator from 'user-agent-string-generator';
 import linkedInUrl from './linkedInUrl';
 import metaheaders from './headers';
 
@@ -11,8 +11,7 @@ const gzip = true;
 export default function retrieve(link) {
   const url = linkedInUrl(link);
   const headers = Object.assign({}, metaheaders, {
-    'User-Agent': userAgents(),
+    'User-Agent': userAgentGenerator(),
   });
-  console.log({ url, method, headers });
   return request({ url, method, headers, gzip });
 }
