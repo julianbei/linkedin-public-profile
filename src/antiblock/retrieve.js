@@ -13,5 +13,6 @@ export default function retrieve(link) {
   const headers = Object.assign({}, metaheaders, {
     'User-Agent': userAgents(),
   });
+  console.log({ url, method, headers });
   return request({ url, method, headers, gzip });
 }

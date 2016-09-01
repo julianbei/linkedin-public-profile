@@ -15,10 +15,25 @@ const url = 'https://de.linkedin.com/in/julianamelung';
 
 const expect = chai.expect;
 
+
 describe('parser', () => {
+  let timing = 0;
+
   it('Should parse a profile', done => {
+    const start = new Date();
     linkedInProfile(html, true).then(profile => {
       expect(profile).to.eql(resultProfile);
+      timing = new Date() - start;
+      done();
+    }).catch(done);
+  });
+
+  it('Should parse a profile faster the second time', done => {
+    const start = new Date();
+    linkedInProfile(html, true).then(profile => {
+      expect(profile).to.eql(resultProfile);
+      const newTiming = new Date() - start;
+      expect((newTiming < timing)).to.be.true;
       done();
     }).catch(done);
   });

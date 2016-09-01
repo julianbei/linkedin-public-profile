@@ -1,10 +1,12 @@
 'use strict';
 /* eslint max-len: 0 */
 
-const agents = [
-  'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; Media Center PC 4.0; SLCC1; .NET CLR 3.0.04320)',
-];
+import userAgentGenerator from 'user-agent-string-generator';
+
+// const agents = [
+//   'Mozilla/5.0 (X11; Linux i686; rv:10.0) Gecko/20100101 Firefox/10.0',
+// ];
 
 export default function randomAgent() {
-  return agents[Math.floor(Math.random() * agents.length)];
+  return userAgentGenerator(); // agents[Math.floor(Math.random() * agents.length)];
 }
