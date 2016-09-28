@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
-    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-es2015": "^6.14.0",
     "chai": "^3.5.0",
     "dirty-chai": "^1.2.2",
     "eslint": "^3.3.1",
