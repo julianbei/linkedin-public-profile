@@ -10,7 +10,7 @@
     "build": "gulp build"
   },
   "dependencies": {
-    "request-promise": "^2.0.1",
+    "request-promise": "^4.2.0",
     "uni-scrape": "0.0.2",
     "user-agent-string-generator": "0.0.2"
   },
