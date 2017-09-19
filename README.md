@@ -9,7 +9,7 @@
 # linkedin-public-profile
 Tiny LinkedIn profile scraper for public profiles.
 
-*Scraping LinkedIn Profiles does violate their policies and they may sue you.*
+<b>Scraping LinkedIn Profiles does violate their policies and they may sue you.</b>
 Therefore this might be my last version of this tool.
 please see: https://www.linkedin.com/help/linkedin/answer/56347
 
