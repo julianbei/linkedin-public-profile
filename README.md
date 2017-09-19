@@ -1,4 +1,7 @@
 
+# THIS REPO IS DEAD! 
+# SEARCHING FOR MAINTAINER
+
 [![npm version](https://badge.fury.io/js/linkedin-public-profile.svg)](https://badge.fury.io/js/linkedin-public-profile)
 [![npm](https://img.shields.io/npm/dt/linkedin-public-profile.svg)](https://www.npmjs.com/package/linkedin-public-profile)
 
